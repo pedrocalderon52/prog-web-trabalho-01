@@ -55,3 +55,43 @@ body {
     background-color: #f5f5f5;
 }
 
+:root {
+  --yellow: #d4af37; /* a cor amarela usada */
+}
+
+/* box base */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  border: 2px solid transparent; /* borda inicial invisível */
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover geral (shadow + borda amarela) */
+.box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--yellow);
+}
+
+/* Ícone dentro da box */
+.box i {
+  font-size: 2rem; /* tamanho padrão */
+  transition: transform 0.3s ease;
+}
+
+.box:hover i {
+  transform: scale(1.2); /* aumenta levemente o ícone */
+}
+
+/* Hover opcional: animação de subida da box */
+.box.subida:hover {
+  transform: translateY(-10px);
+}
+
