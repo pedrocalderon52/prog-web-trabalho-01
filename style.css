@@ -6,24 +6,42 @@
 .bi-person-circle{
     display: flex;
     align-items: center;
-    margin-left: 999px;
+    margin-left: auto;
 }
 
 .contato button{
     display: flex;
-    align-items: right;
+    align-items: center;
+    gap: 5px;
 }
 
-.header {
+.menu {
     display: flex;           /* coloca título e botão na mesma linha */
     align-items: center;     /* alinha verticalmente */
-    gap: 10px;               /* espaço entre título e botão */
+    gap: 45px;               /* espaço entre título e botão */
 }
 
-.header a button {
-    margin-left: auto;       /* empurra o botão para a direita */
+.menu a button {
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    font-size: medium;
 }
 
+.campo-busca {
+    width: 250px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.botao_entrar i {
+    margin-right: 8px; 
+    vertical-align: middle ; 
+    font-size: 18px;
+    border-radius: 15px;
+    border: 1px;
+}
 .titulo {
     margin: 0;
 }
