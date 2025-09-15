@@ -44,7 +44,7 @@ body {
   --yellow: #d4af37; /* a cor amarela usada */
 }
 
-.coringa-item {
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,22 +59,22 @@ body {
 }
 
 /* Hover geral */
-.coringa-item:hover {
+.box:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover específico para ícones <i> dentro da caixinha */
-.coringa-item i {
+.box i {
   font-size: 2rem; /* tamanho padrão */
   transition: 0.3s ease, transform 0.3s ease;
 }
 
-.coringa-item:hover i {
+.box:hover i {
   transform: scale(1.2); /* aumenta levemente o ícone */
   border-color: var(--yellow); /* se houver borda, muda a cor */
 }
 
 /* Caso queira borda amarela ao redor da caixinha quando hover */
-.coringa-item:hover {
+.box:hover {
   border-color: var(--yellow);
 }
