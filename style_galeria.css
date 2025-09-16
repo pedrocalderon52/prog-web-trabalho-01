@@ -9,6 +9,7 @@
 
 .section-title-small {
     width: 150%;
+    margin-top: 50px;
     margin-left: -30px;
     background-color: #111;
     padding-bottom: 40px;
@@ -55,6 +56,16 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+hr {
+  background: linear-gradient(to right, #D4AF37, rgb(231, 218, 30) );
+  height: 2px;
+  border: 0;
+}
+
+img::selection{
+    background: none;
 }
 
 .discount {
