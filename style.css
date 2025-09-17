@@ -19,8 +19,8 @@ body {
     background-color: var(--light-gray);
     color: var(--text-color);
     line-height: 1.6;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     scroll-behavior: smooth;
 }
 
@@ -47,14 +47,20 @@ button {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.container-principal {
+    max-width: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: right;
+}
 /* ========================================= */
 /* HEADER                                     */
 /* ========================================= */
@@ -105,24 +111,26 @@ hr.linha {
     flex-wrap: wrap;
 }
 
-.header-principal .titulo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--dark-gray);
-}
 
-.header-principal .navegacao {
+.header-principal .navegacao:not(.logo) {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
-.header-principal .navegacao a {
+.header-principal .navegacao a:not(.logo) {
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
 }
 
-.header-principal .navegacao a:hover {
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--dark-gray);
+    padding-right: 10px;
+}
+
+.header-principal .navegacao a:hover:not(.logo) {
     color: var(--yellow);
     border-bottom-color: var(--yellow);
 }
@@ -200,7 +208,7 @@ section p {
 .hero-section {
     background-color: #1c1c1c;
     color: #fff;
-    width: 100vw; 
+    width: 100vw;       /* largura total da viewport */
     margin-left: calc(-50vw + 50%);
 }
 
