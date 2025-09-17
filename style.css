@@ -59,6 +59,10 @@ button{
 }
 
 
+img::selection{
+    background: none;
+}
+
 
 
 
@@ -147,7 +151,7 @@ button{
 .footer_bottom .footer_links a:hover {
     color: #ffcc00;
 }
-=======
+/* ======= */
 body {
     background-color: #f5f5f5;
 }
