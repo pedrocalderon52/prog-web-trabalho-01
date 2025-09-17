@@ -9,130 +9,203 @@
 
 </head>
 <body>
-    <!-- Header is here -->
-<header>
-    <div class="contato">
-        <i class="bi bi-telephone"></i>(12)212819028190
-        <i class="bi bi-envelope-at"></i>HardAutoPeças@gmail.com
-        <i class="bi bi-person-circle"></i><button class="botao_entrar">Entrar</button>
-    </div>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contato">
+                    <i class="bi bi-telephone"></i>(61) 99999-9999
+                    <i class="bi bi-envelope-at"></i>HardAutoPeças@gmail.com
+                </div>
+                <div class="acao-usuario">
+                    <i class="bi bi-person-circle"></i><button class="botao_entrar">Entrar</button>
+                </div>
+            </div>
+        </div>
+        <hr class="linha">
+        <div class="header-principal">
+            <div class="container">
+                <h1 class="titulo">
+                    Hard Auto Peças
+                </h1>
+                <nav class="navegacao">
+                    <a href="#/inicio.html">Início</a>
+                    <a href="#/galeria.html">Produtos</a>
+                    <a href="#/marcas.html">Marcas</a>
+                    <a href="#/servicos.html">Serviços</a>
+                    <a href="#/contato.html">Contato</a>
+                </nav>
+                <div class="header-direita">
+                    <div class="campo-busca-container"> 
+                        <input type="text" placeholder="Buscar peças...">
+                        <button class="botao-busca"><i class="bi bi-search"></i></button>
+                    </div>
+                    <button class="bota-carrinho">
+                        <i class="bi bi-cart2"></i> Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<hr>
+    <main>
+        <section class="banner hero-section">
+            <div class="hero-content">
+                <!-- Lado esquerdo: texto -->
+                <div class="hero-text">
+                    <h1>Peças Premium para Veículos de Luxo</h1>
+                    <p>Especialistas em peças para veículos de médio e alto padrão. Qualidade premium, instalação profissional e 7 unidades para atendê-lo.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="button-primary">Ver Catálogo</a>
+                        <a href="#" class="button-secondary">Nossas Unidades</a>
+                    </div>
 
-<br>
+                    <div class="hero-info">
+                        <div class="info-item">
+                            <span class="info-number">7</span>
+                            <span class="info-text">Unidades</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-number">15+</span>
+                            <span class="info-text">Anos</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-number">Premium</span>
+                            <span class="info-text">Qualidade</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="menu">
-        <h1 class="titulo">Hard Auto Peças</h1> 
-        <a href="" class="inicio">
-            <button>Início</button>
-        </a>
-        <a href="http://127.0.0.1:5500/galeria.html"class="produtos">
-            <button>Produtos</button>
-        </a>
-        <a href=""class="marcas">
-            <button>Marcas</button>
-        </a>
-        <a href=""class="promocoes">
-            <button>Promoções</button>
-        </a>
-        <a href=""class="contato">
-            <button>Contato</button>
-        </a>
-        <input type="text" placeholder="Buscar peças..." class="campo-busca">
+                <!-- Lado direito: imagem -->
+                <div class="hero-image-container">
+                    <img src="https://autoentusiastas.com.br/ae/wp-content/uploads/2023/01/Dodge-Challenger-SRT-motor.jpg" alt="Veículo Premium">
+                    <span class="premium-badge">Premium</span>
+                </div>
+            </div>
+        </section>
 
-        <button class="botao_entrar">
-            <i class="bi bi-cart2"></i> Carrinho
-        </button>
+        <section class="quem">
+            <div class="quem-conteudo">
+                <h2>Quem Somos</h2>
+                <p>A Hard Auto Peças é uma empresa consolidada no ramo de autopeças e serviços 
+                    automotivos, especializada em atender proprietários de veículos de médio e alto padrão.
+                    Com mais de 15 anos de tradição e modernidade, oferecemos qualidade, confiança e excelência em cada serviço.
+                </p>
+            </div>
+        <section class="historia">
+            <div class="historia-conteudo">
+                <h2>Nossa História</h2>
+                <p> Fundada com o objetivo de revolucionar o mercado de autopeças, a Hard Auto Peças nasceu da paixão por veículos de qualidade
+                    e do comprometimento em oferecer apenas o melhor para nossos clientes.  Ao longo dos anos, expandimos nossa operação 
+                    para 7 unidades estrategicamente localizadas, sempre mantendo nosso foco em veículos movidos à gasolina de médio e alto 
+                    padrão, onde podemos aplicar nossa expertise e oferecer o melhor atendimento.  Nossa especialização nos permite entender 
+                    profundamente as necessidades específicas de cada marca e modelo, garantindo soluções precisas e eficazes para nossos clientes 
+                    mais exigentes.
+                </p>
+            <div class="historia-imagem"> <!-- ex classe box fazer um css baseado nela-->
+                <img src="#" alt="imagem historia">
+            </div>
+            <div class="historia-botoes">
+                <button class="btn-historia">Conheça Nossos Serviços</button>
+            </div>
+        </section>
+        <section class="diferencial">
+            <div class="diferencial-conteudo">
+                <ul class="diferencial-lista">
+                    <li class="diferencial-item">
+                        <h3>Qualidade Garantida</h3>
+                        <p>Trabalhamos com as melhores marcas do mercado, garantindo peças originais e de alta performance.</p>
+                    </li>
+                    <li class="diferencial-item">
+                        <h3>Atendimento Especializado</h3>
+                        <p>Nossa equipe é treinada para oferecer um atendimento personalizado, entendendo as necessidades de cada cliente.</p>
+                    </li>
+                    <li class="diferencial-item">
+                        <h3> Logística Eficiente</h3>
+                        <p>Com 7 unidades estrategicamente localizadas, garantimos rapidez na entrega e disponibilidade de peças.</p>
+                    </li>
+                    <li class="diferencial-item">
+                        <h3>Personalização</h3>
+                        <p>Soluções sob medida para cada tipo de veículo</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="agendamento">
+            <div class="agendamento-conteudo">
+                <h2>Agende seu Serviço</h2>
+                <p>Facilitamos o processo de agendamento para que você possa cuidar do seu veículo com praticidade e segurança. 
+                    Entre em contato conosco para marcar uma visita em uma de nossas unidades.
+                </p>
+                <button class="btn-agendamento">Agendar Agora</button>
+            </div>
+        </section>
+        <section class="servicos">
+            <div class="servicos-conteudo">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos uma gama completa de serviços especializados para veículos de médio e alto padrão, com foco em qualidade, 
+                    confiabilidade e excelência no atendimento.
+                </p>
+            </div>
+        </section>
+        <div class="box subida">
+            <img src="img1.png" alt="Ícone">
+            <h3>Título da box</h3>
+            <p>Descrição ou texto da box</p>
+        </div>
+
+        
+
+        <div class="box">
+            <img src="img2.png" alt="Ícone">
+            <h3>Outra box</h3>
+            <p>Descrição ou texto</p>
+        </div>
+    </main>
 
 
 
-    </div>
-</header>
-<!-- Usar para determinado tipo de seção que for usar -->
-<!-- box com imagem -->
-<div class="box subida">
-  <img src="img1.png" alt="Ícone">
-  <h3>Título da box</h3>
-  <p>Descrição ou texto da box</p>
-</div>
+    <footer class="footer">
+        <div class="footer_container">
 
-<!-- box com ícone <i> -->
-<div class="box subida">
-  <i class="icon-class"></i>
-  <h3>Título da box</h3>
-  <p>Descrição ou texto da box</p>
-</div>
+            <div class="footer_section about">
+                <p class="footer_title">Hard Auto Peças</p>
+                <p>
+                    Sua loja especializada em autopeças com mais de 15 anos de experiência. <br>
+                    Qualidade e confiança garantidas.
+                </p>
+                <div class="social_icons">
+                    <a href="https://www.linkedin.com/in/lucas-borges-9723b8309/" target="_blank"><img src="/img/linkedin-svgrepo-com.svg" alt="LinkedIn logo"></a>
+                    <a href="https://www.instagram.com/monitoriatech/" target="_blank"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram Logo"></a>
+                </div>
+            </div>
 
-<!-- box sem animação de subida -->
-<div class="box">
-  <img src="img2.png" alt="Ícone">
-  <h3>Outra box</h3>
-  <p>Descrição ou texto</p>
-</div>
+            <div class="footer_section links">
+                <p class="footer_title">Links Rápidos</p>
+                <ul>
+                    <li><a href="https://github.com/pedrocalderon52/prog-web-trabalho-01/blob/main/briefing.txt" target="_blank">Briefing</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#/galeria.html">Catálogo</a></li>
+                    <li><a href="#">Inicio do site</a></li>
+                </ul>
+            </div>
 
-<!-- Main starts here-->
-<main>
-
-
-</main>
-
-
-
-
-
-
-
-<!-- Footer starts here-->
-<footer class="footer">
-    <div class="footer_container">
-
-        <!-- Logo and Description -->
-        <div class="footer_section about">
-            <p class="footer_title">Hard Auto Peças</p>
-            <p>
-                Sua loja especializada em autopeças com mais de 15 anos de experiência. <br>
-                Qualidade e confiança garantidas.
-            </p>
-            <div class="social_icons">
-                <a href="https://www.linkedin.com/in/lucas-borges-9723b8309/" target="_blank"><img src="/img/linkedin-svgrepo-com.svg" alt="LinkedIn logo"></a>
-                <a href="https://www.instagram.com/monitoriatech/" target="_blank"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram Logo"></a>
+            <div class="footer_section contact">
+                <p class="footer_title">Contato</p>
+                <p>Rua das Autopeças, 123 - São Paulo, SP</p>
+                <p>(74) 99999-9999</p>
+                <p>contato@hardautopecas.com</p>
             </div>
         </div>
 
-        <!-- Links Rápidos -->
-        <div class="footer_section links">
-            <p class="footer_title">Links Rápidos</p>
-            <ul>
-                <li><a href="https://github.com/pedrocalderon52/prog-web-trabalho-01/blob/main/briefing.txt" target="_blank">Briefing</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#/calderon.html">Catálogo</a></li>
-                <li><a href="#">Inicio do site</a></li> <!-- Link it to the start of the page after pull request -->
-                
-                
-            </ul>
+        <div class="footer_bottom">
+            <p>© 2025 Hard Auto Peças. Todos os direitos reservados.</p>
+            <div class="footer_links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Trocas e Devoluções</a>
+            </div>
         </div>
-
-        <!-- Contato -->
-        <div class="footer_section contact">
-            <p class="footer_title">Contato</p>
-            <p>Rua das Autopeças, 123 - São Paulo, SP</p>
-            <p>(74) 99999-9999</p>
-            <p>contato@hardautopecas.com</p>
-
-        </div>
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer_bottom">
-        <p>© 2025 Hard Auto Peças. Todos os direitos reservados.</p>
-        <div class="footer_links">
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Trocas e Devoluções</a>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 
 </body>
-</html>
