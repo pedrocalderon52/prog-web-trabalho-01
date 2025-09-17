@@ -3,6 +3,12 @@
     align-items: center;
     gap: 10px; /* espaço entre telefone, email e botão */
 }
+.linha{
+    border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
 .bi-person-circle{
     display: flex;
     align-items: center;
@@ -34,6 +40,8 @@
     border-radius: 15px;
     border: 1px solid #ccc;
     font-size: 16px;
+    align-items: center;
+    margin-left: auto;
 }
 .botao_entrar i {
     margin-right: 8px; 
@@ -111,7 +119,7 @@ button{
     width: 3dvw; 
     height: auto;
     display: block;
-    filter: grayscale(30%);
+    filter: grayscale(95%);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
