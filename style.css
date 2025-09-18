@@ -6,6 +6,7 @@
     --dark-gray: #1c1c1c;
     --light-gray: #f5f5f5;
     --text-color: #333;
+    --border-color: #ddd;
 }
 
 * {
@@ -52,10 +53,7 @@ button {
 
 img {
     width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
+    height: auto;
 }
 
 /* ========================================= */
@@ -148,7 +146,7 @@ hr.linha {
 .campo-busca-container {
     display: flex;
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -339,6 +337,21 @@ section p {
 /* ========================================= */
 /* SEÇÕES: QUEM, HISTÓRIA, DIFERENCIAL        */
 /* ========================================= */
+
+.quem-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quem-conteudo span {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
 .historia-imagem img {
     width: 50%;
     height: 600px;
@@ -385,14 +398,43 @@ section p {
 /* ========================================= */
 /* AGENDAMENTO                                 */
 /* ========================================= */
+/* Seção inteira do agendamento */
 .agendamento {
-    background-color: var(--dark-gray);
+    background-color: var(--dark-gray); /* Garante o fundo escuro */
     color: #fff;
-    padding: 50px 20px;
+    padding: 60px 40px; /* Espaçamento interno */
     border-radius: 10px;
-    text-align: center;
+    margin-top: 50px; /* Espaço para separar de outras seções */
 }
 
+/* Container que alinha os itens lado a lado */
+.agendamento-conteudo {
+    display: flex;
+    align-items: center;      /* Alinha verticalmente o texto e a imagem */
+    justify-content: center;  /* Centraliza o conteúdo na seção */
+    gap: 50px;                /* Espaço entre o texto e a imagem */
+    max-width: 1100px;        /* Define uma largura máxima */
+    margin: 0 auto;           /* Centraliza o container */
+}
+
+/* Bloco da esquerda (Texto e Botão) */
+.agendamento-texto {
+    flex: 1;                  /* Faz o texto ocupar o espaço disponível */
+    text-align: left;         /* Alinha o conteúdo à esquerda */
+}
+
+.agendamento-texto h2 {
+    font-size: 2.2rem; /* Tamanho do título */
+    margin-bottom: 20px;
+}
+
+.agendamento-texto p {
+    font-size: 1rem;
+    color: #ccc; /* Cor mais suave para o parágrafo */
+    line-height: 1.6;
+}
+
+/* Botão */
 .btn-agendamento {
     background-color: var(--yellow);
     color: var(--dark-gray);
@@ -401,10 +443,21 @@ section p {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1rem;
+    margin-top: 30px; /* Adiciona o espaço entre o texto e o botão */
+    transition: background-color 0.3s ease;
 }
 
 .btn-agendamento:hover {
     background-color: #c5a030;
+}
+
+/* Bloco da direita (Imagem) */
+.agendamento-imagem img {
+    max-width: 450px; /* Largura máxima da imagem */
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Remove espaços indesejados */
 }
 
 /* ========================================= */
@@ -562,10 +615,55 @@ section p {
     }
 }
 
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+th[colspan="5"] {
+    background-color: #333;
+    color: #fff;
+    font-size:auto;
+    
+}
+
+.titulo-setor {
+    background-color: #ccc;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.estoque {
+    background-color: #c6f6c6; 
+}
+
+.chegando {
+    background-color: #fff7b3; 
+}
+
+.falta {
+    background-color: #d9d9d9; 
+}
+
 ol, ul {
   padding-left: 1px;
 }
 
 ol {
   list-style-position: inside; 
+
 }
