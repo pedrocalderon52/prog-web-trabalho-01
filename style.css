@@ -590,7 +590,13 @@ section p {
     font-size: 14px;
     color: #aaa;
 }
-
+#desenvolvido-por {
+    font-size: 14px;
+    color: #888;
+}
+.alunos {
+    color: var(--yellow);
+}
 .footer_links a {
     color: #aaa;
     margin: 0 10px;
