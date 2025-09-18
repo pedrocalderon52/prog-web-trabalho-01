@@ -567,6 +567,22 @@ section p {
 }
 
 
+#patrocinadores {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 5px rgba(242, 193, 0, 0.407);
+
+
+}
+
 /* ========================================= */
 /* FOOTER                                     */
 /* ========================================= */
