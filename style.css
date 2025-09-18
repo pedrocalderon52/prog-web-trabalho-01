@@ -709,3 +709,50 @@ ol, ul {
 ol {
   list-style-position: inside; 
 }
+
+
+
+
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+th[colspan="5"] {
+    background-color: #333;
+    color: #fff;
+    font-size:auto;
+    
+}
+
+.titulo-setor {
+    background-color: #ebddb8;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.estoque {
+    background-color: #c6f6c6; 
+}
+
+.chegando {
+    background-color: #fff7b3; 
+}
+
+.falta {
+    background-color: #d9d9d9; 
+}
