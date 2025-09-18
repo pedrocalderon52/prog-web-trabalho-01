@@ -31,7 +31,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    box-sizing: border-box; /* Garante que padding não afete a largura */
+    box-sizing: border-box; 
 }
 
 h1, h2, h3 {
@@ -65,7 +65,7 @@ header {
     padding: 0;
 }
 
-/* --- Topo do Header --- */
+
 .header-top {
     padding: 10px 0;
     font-size: 14px;
@@ -103,7 +103,7 @@ hr.linha {
     margin: 0;
 }
 
-/* --- Header Principal --- */
+
 .header-principal {
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ hr.linha {
 .navegacao {
     display: flex;
     gap: 30px;
-    margin: 0 auto; /* Centraliza a navegação */
+    margin: 0 auto; 
 }
 
 .navegacao a {
@@ -212,7 +212,7 @@ section p {
     padding: 60px 20px;
     background-color: #1c1c1c;
     color: #fff;
-    width: 100vw;       /* largura total da viewport */
+    width: 100vw;       
     margin-left: calc(-50vw + 50%);
 }
 
@@ -354,12 +354,12 @@ section p {
 
 .historia-row {
     display: flex;
-    align-items: stretch; /* 🔥 mantém altura proporcional */
+    align-items: stretch;
     gap: 50px;
     flex-wrap: wrap;
 }
 
-/* Coluna do texto à esquerda */
+
 .historia-texto {
     flex: 1;
     min-width: 300px;
@@ -368,7 +368,7 @@ section p {
     justify-content: center;
 }
 
-/* Título alinhado à esquerda */
+
 .historia-texto h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -381,7 +381,7 @@ section p {
     line-height: 1.7;
 }
 
-/* Coluna da imagem à direita */
+
 .historia-imagem {
     flex: 1;
     min-width: 300px;
@@ -390,12 +390,12 @@ section p {
     justify-content: center;
 }
 
-/* --- CORREÇÃO DA IMAGEM --- */
+
 .historia-imagem img {
     width: 100%;
     height: auto;
-    max-height: 350px; /* 🔥 limita altura */
-    object-fit: cover; /* corta sobra sem deformar */
+    max-height: 350px; 
+    object-fit: cover; 
     border-radius: 12px;
     display: block;
 }
@@ -412,7 +412,7 @@ section p {
     font-weight: bold;
     font-size: 1rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    align-self: flex-start; /* 🔥 garante que o botão mantém o tamanho normal */
+    align-self: flex-start; 
 }
 
 .historia-texto .btn-historia:hover {
