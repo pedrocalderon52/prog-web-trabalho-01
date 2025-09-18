@@ -352,13 +352,36 @@ section p {
     font-weight: bold;
 }
 
+.historia-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.historia-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.historia-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.historia-imagem {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
 .historia-imagem img {
-    width: 50%;
-    height: 600px;
+    width: 100%;
+    height: 260px;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 16px;
+    
 }
 
 .btn-historia {
