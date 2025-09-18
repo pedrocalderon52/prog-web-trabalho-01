@@ -574,3 +574,11 @@ section p {
         gap: 15px;
     }
 }
+
+ol, ul {
+  padding-left: 1px;
+}
+
+ol {
+  list-style-position: inside; 
+}
