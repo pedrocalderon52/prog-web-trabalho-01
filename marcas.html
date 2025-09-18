@@ -12,40 +12,40 @@
 <body>
 
     <header>
-        <div class="contato">
-            <i class="bi bi-telephone"></i>(12)212819028190
-            <i class="bi bi-envelope-at"></i>HardAutoPeças@gmail.com
-            <i class="bi bi-person-circle"></i><button class="botao_entrar">Entrar</button>
+        <!-- Topo do header -->
+        <div class="header-top" id="inicio">
+            <div class="container">
+                <div class="contato">
+                    <i class="bi bi-telephone"></i>(61) 9898-1111
+                    <i class="bi bi-envelope-at"></i>contato@hardautopecas.com
+                </div>
+                <div class="acao-usuario">
+                    <i class="bi bi-person-circle"></i>
+                    <button class="botao_entrar">Entrar</button>
+                </div>
+            </div>
         </div>
-
-        <hr>
-
-        <br>
-
-        <div class="menu">
-            <h1 class="titulo">Hard Auto Peças</h1> 
-            <a href="#/inicio.html" class="inicio">
-                <button>Início</button>
-            </a>
-            <a href="#/galeria.html"class="produtos">
-                <button>Produtos</button>
-            </a>
-            <a href="#/marcas.html"class="marcas">
-                <button>Marcas</button>
-            </a>
-            <a href=""class="promocoes">
-                <button>Serviços</button>
-            </a>
-            <a href=""class="contato">
-                <button>Contato</button>
-            </a>
-            <input type="text" placeholder="Buscar peças..." class="campo-busca">
-            
-            <button class="botao_entrar">
-                <i class="bi bi-cart2"></i> Carrinho
-            </button>
-            
-        </div>
+        <hr class="linha">
+        <div class="header-principal">
+            <div class="logo-container">
+                <h2 class="logo">Hard Auto Peças</h2>
+            </div>
+            <nav class="navegacao">
+                <a href="/index.html">Início</a>
+                <a href="/galeria.html">Produtos</a>
+                <a href="/marcas.html">Marcas</a>
+                <a href="/servicos.html">Serviços</a>
+                <a href="/contato.html">Contato</a>
+            </nav>
+            <div class="header-direita">
+                <div class="campo-busca-container"> 
+                    <input type="text" placeholder="Buscar peças...">
+                    <button class="botao-busca"><i class="bi bi-search"></i></button>
+                </div>
+                <button class="bota-carrinho">
+                    <i class="bi bi-cart2"></i> Carrinho
+                </button>
+            </div> 
     </header>
     
     
@@ -97,7 +97,7 @@
                     <p class="brand">Líder mundial em velas de ignição e sensores automotivos.</p>
                     <p><strong>Fundada:</strong> 1936 | <strong>País:</strong> Japão</p>
                     <p><strong>Produtos:</strong> 45 | <strong>Avaliação:</strong> ⭐ 4.8</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://automotivo.ngkntk.com.br"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
                     <p class="brand">Referência mundial em sistemas de freio para veículos de alta performance.</p>
                     <p><strong>Fundada:</strong> 1961 | <strong>País:</strong> Itália</p>
                     <p><strong>Produtos:</strong> 67 | <strong>Avaliação:</strong> ⭐ 4.9</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://www.brembo.com"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
                     <p class="brand">Especialista em filtros de ar de alta performance.</p>
                     <p><strong>Fundada:</strong> 1969 | <strong>País:</strong> EUA</p>
                     <p><strong>Produtos:</strong> 89 | <strong>Avaliação:</strong> ⭐ 4.7</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://www.knfilters.com"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                     <p class="brand">Lubrificantes premium utilizados em veículos de luxo e F1.</p>
                     <p><strong>País:</strong> Reino Unido</p>
                     <p><strong>Produtos:</strong> 34 | ⭐ 4.6</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://www.castrol.com"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
                     <p class="brand">Amortecedores premium para carros esportivos e de luxo.</p>
                     <p><strong>País:</strong> Alemanha</p>
                     <p><strong>Produtos:</strong> 56 | ⭐ 4.8</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://bilsteinbrasil.com.br"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -183,7 +183,7 @@
                     <p class="brand">Pneus premium para máximo desempenho e segurança.</p>
                     <p><strong>País:</strong> França</p>
                     <p><strong>Produtos:</strong> 78 | ⭐ 4.7</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://michelin.pneufree.com.br"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -198,7 +198,7 @@
                     <p class="brand">Escapamentos de alta performance para veículos esportivos.</p>
                     <p><strong>País:</strong> Eslovênia</p>
                     <p><strong>Produtos:</strong> 23 | ⭐ 4.9</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://www.akrapovic.com"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>
@@ -213,7 +213,7 @@
                     <p class="brand">Líder em baterias automotivas de qualidade internacional.</p>
                     <p><strong>País:</strong> Brasil</p>
                     <p><strong>Produtos:</strong> 28 | ⭐ 4.5</p>
-                    <button class="btn">Ver Produtos</button>
+                    <a href="https://mourafacil.moura.com.br"><button class="btn">Ver Produtos</button></a>
                 </div>
             </div>
         </div>

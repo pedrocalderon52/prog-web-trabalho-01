@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque - Loja de Concerto de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Topo do header -->
+        <div class="header-top" id="inicio">
+            <div class="container">
+                <div class="contato">
+                    <i class="bi bi-telephone"></i>(61) 9898-1111
+                    <i class="bi bi-envelope-at"></i>contato@hardautopecas.com
+                </div>
+                <div class="acao-usuario">
+                    <i class="bi bi-person-circle"></i>
+                    <button class="botao_entrar">Entrar</button>
+                </div>
+            </div>
+        </div>
+        <hr class="linha">
+        <div class="header-principal">
+            <div class="logo-container">
+                <h2 class="logo">Hard Auto Peças</h2>
+            </div>
+            <nav class="navegacao">
+                <a href="/index.html">Início</a>
+                <a href="/galeria.html">Produtos</a>
+                <a href="/marcas.html">Marcas</a>
+                <a href="/servicos.html">Serviços</a>
+                <a href="/contato.html">Contato</a>
+            </nav>
+            <div class="header-direita">
+                <div class="campo-busca-container"> 
+                    <input type="text" placeholder="Buscar peças...">
+                    <button class="botao-busca"><i class="bi bi-search"></i></button>
+                </div>
+                <button class="bota-carrinho">
+                    <i class="bi bi-cart2"></i> Carrinho
+                </button>
+            </div> 
+    </header>
+
+    <h2 class="titulo">Estoque da Oficina de Carros</h2>
+    <table>
+        <tr>
+            <th colspan="5">Relatório de Estoque</th>
+        </tr>
+
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+
+        <tr>
+            <td colspan="5" class="titulo-setor">Peças de Motor</td>
+        </tr>
+
+        <tr class="estoque">
+            <td>309</td>
+            <td>Filtro de Óleo</td>
+            <td>Motor</td>
+            <td>50</td>
+            <td>R$29,99</td>
+        </tr>
+
+        <tr class="falta">
+            <td>3289</td>
+            <td>Correia Dentada</td>
+            <td>Motor</td>
+            <td colspan="2">-</td>
+        </tr>
+
+        <tr class="chegando">
+            <td>7809</td>
+            <td>Óleo de Motor</td>
+            <td>Motor</td>
+            <td>0</td>
+            <td>R$79,99</td>
+        </tr>
+        <tr class="estoque">
+            <td>2901</td>
+            <td>Virabrequim</td>
+            <td>Motor</td>
+            <td>5</td>
+            <td>R$999,99</td>
+        </tr>
+
+        <tr>
+            <td colspan="5" class="titulo-setor">Freios e Suspensão</td>
+        </tr>
+
+        <tr class="estoque">
+            <td>004</td>
+            <td>Pastilha de Freio</td>
+            <td>Freios</td>
+            <td>30</td>
+            <td>R$109,99</td>
+        </tr>
+
+        <tr class="chegando">
+            <td>567</td>
+            <td>Amortecedor Traseiro</td>
+            <td>Suspensão</td>
+            <td>0</td>
+            <td>R$1100,99</td>
+        </tr>
+        <tr class="falta">
+            <td>38901</td>
+            <td>kit Amortecedor</td>
+            <td>Suspensão</td>
+            <td colspan="2">-</td>
+        </tr>
+
+        <tr>
+            <td colspan="5" class="titulo-setor">Elétrica e Iluminação</td>
+        </tr>
+
+        <tr class="chegando">
+            <td>42890</td>
+            <td>Bateria 60Ah</td>
+            <td>Elétrica</td>
+            <td>0</td>
+            <td>R$99,99</td>
+        </tr>
+
+        <tr class="falta">
+            <td>3190</td>
+            <td>Lanterna Traseira</td>
+            <td>Iluminação</td>
+            <td colspan="2">-</td>
+        </tr>
+
+        <tr class="estoque">
+            <td>133</td>
+            <td>Velas de Ignição</td>
+            <td>Eletrica</td>
+            <td>200</td>
+            <td>R$29,99</td>
+        </tr>
+        <tr class="estoque">
+            <td>890</td>
+            <td>Lanterna dianteira</td>
+            <td>Iluminação</td>
+            <td>25</td>
+            <td>R$299,99</td>
+        </tr>
+    </table>
+
+
+    <footer class="footer">
+        <div class="footer_container">
+
+            <div class="footer_section about">
+                <p class="footer_title">Hard Auto Peças</p>
+                <p>
+                    Sua loja especializada em autopeças com mais de 15 anos de experiência. <br>
+                    Qualidade e confiança garantidas.
+                </p>
+                <div class="social_icons">
+                    <a href="https://www.linkedin.com/in/lucas-borges-9723b8309/" target="_blank"><img src="/img/linkedin-svgrepo-com.svg" alt="LinkedIn logo"></a>
+                    <a href="https://www.instagram.com/monitoriatech/" target="_blank"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram Logo"></a>
+                </div>
+            </div>
+
+            <div class="footer_section links">
+                <p class="footer_title">Links Rápidos</p>
+                <ul>
+                    <li><a href="https://github.com/pedrocalderon52/prog-web-trabalho-01/" target="_blank">Código do projeto</a></li>
+                    <li><a href="/briefing.html" target="_blank">Briefing</a></li>
+                    <li><a href="/estoque.html">Estoque</a></li>
+                    <li><a href="/glossario.html">Glossário</a></li>
+                    <li><a href="#inicio">Inicio do site</a></li>
+                    <li><a href="https://www.figma.com/make/SQeiEt5xIfCLLsk367HFnj/Auto-Parts-Website?node-id=0-1&p=f"> Wireframe</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section contact">
+                <p class="footer_title">Contato</p>
+                <p>CLN 908, PL.8,L.2 - Brasília, DF</p>
+                <p>(61) 9898-1111</p>
+                <p>contato@hardautopecas.com</p>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p>© 2025 Hard Auto Peças. Todos os direitos reservados.</p>
+            <div class="footer_links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Trocas e Devoluções</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
