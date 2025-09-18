@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 10px; /* espaço entre telefone, email e botão */
+    text-decoration: none;
 }
 .linha{
     border: none;
@@ -63,6 +64,132 @@ img::selection{
     background: none;
 }
 
+/* Here is where main css begins */
+.hero-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 50px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do conteúdo (texto e imagem) */
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Espaço entre as colunas */
+    padding: 0 20px;
+}
+
+/* Estilos para o lado esquerdo (texto) */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    color: #ffcc00;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #ffcc00;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Estilos para os botões */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.button-primary,
+.button-secondary {
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-primary {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.button-primary:hover {
+    background-color: #e6c100;
+}
+
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+}
+
+.button-secondary:hover {
+    background-color: rgb(7, 7, 7);
+}
+
+/* Estilos para as informações (7 Anos, etc) */
+.hero-info {
+    display: flex;
+    gap: 40px;
+}
+
+.info-item {
+    color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-number {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #ffcc00;
+    margin-top: 5px;
+}
+
+/* Estilos para o lado direito (imagem) */
+.hero-image-container {
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Estilos para o selo "Premium" */
+.premium-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f7d000;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 
 
 
@@ -376,49 +503,109 @@ hr {
     background: #333;
 }
 
+.input-group {
+      margin-bottom: 15px;
+    }
+.input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+.input-group input,
+.input-group select,
+.input-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+.form-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    
+.form-container h5 {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
 
-.card-body p {
-    margin: 4px 0;
-    font-size: 14px;
-    color: #444;
+.btn-enviar {
+      background: #000;
+      color: #f1c40f;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 10px 20px;
+      border: none;
+      transition: 0.3s;
+    }
+
+
+.btn-enviar:hover {
+      background: #222;
+      color: #ffda44;
+    }
+
+
+.autoparts-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #fff;
 }
 
-.tag.destaque {
-    background: #d4af37;
-    color: #111;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.autoparts-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-
-.card-body .title {
-    font-size: 20px;
-    color: #111;
+.autoparts-card .manager {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-
-.card-body .brand {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-    text-transform: none;
+.autoparts-card p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
-.card-body .btn {
-    margin-top: 10px;
-    background: #d4af37;
-    color: #111;
-    font-weight: bold;
+.tags {
+  margin: 10px 0;
 }
 
-.card-body .btn:hover {
-    background: #111;
-    color: #d4af37;
+.tags span {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #ddd;
 }
