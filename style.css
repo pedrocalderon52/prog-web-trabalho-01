@@ -6,6 +6,7 @@
     --dark-gray: #1c1c1c;
     --light-gray: #f5f5f5;
     --text-color: #333;
+    --border-color: #ddd;
 }
 
 * {
@@ -16,83 +17,81 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     color: var(--text-color);
+    margin: 0;
     line-height: 1.6;
-    margin-left: 20px;
-    margin-right: 20px;
-    scroll-behavior: smooth;
 }
 
-/* Links e imagens */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Botões gerais */
-button {
-    cursor: pointer;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: rgba(255, 253, 253, 0.4);
-}
-
-/* Container */
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.container-principal {
-    max-width: 1000px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    align-items: right;
-}
-/* ========================================= */
-/* HEADER                                     */
-/* ========================================= */
-header {
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    padding: 0 40px;
+    box-sizing: border-box; /* Garante que padding não afete a largura */
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================= */
+/* HEADER                                  */
+/* ========================================= */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 0;
+}
+
+/* --- Topo do Header --- */
 .header-top {
     padding: 10px 0;
     font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #666;
 }
 
-.header-top .contato, .header-top .acao-usuario {
+.header-top .contato,
+.header-top .acao-usuario {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.header-top .botao_entrar {
+.header-top .contato i,
+.header-top .acao-usuario i {
+    color: var(--yellow);
+}
+
+.botao_entrar {
     background: none;
     border: 1px solid var(--yellow);
     padding: 5px 15px;
     font-weight: bold;
 }
 
-.header-top .botao_entrar:hover {
+.botao_entrar:hover {
     background-color: var(--yellow);
     color: var(--dark-gray);
 }
@@ -100,37 +99,40 @@ header {
 hr.linha {
     border: none;
     height: 1px;
-    background-color: #e0e0e0;
+    background-color: var(--border-color);
+    margin: 0;
 }
 
+/* --- Header Principal --- */
 .header-principal {
-    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-gray);
+    margin: 0;
+}
 
-.header-principal .navegacao:not(.logo) {
+.navegacao {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin: 0 auto; /* Centraliza a navegação */
 }
 
-.header-principal .navegacao a:not(.logo) {
+.navegacao a {
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: var(--dark-gray);
-    padding-right: 10px;
-}
-
-.header-principal .navegacao a:hover:not(.logo) {
+.navegacao a:hover {
     color: var(--yellow);
     border-bottom-color: var(--yellow);
 }
@@ -143,8 +145,8 @@ hr.linha {
 
 .campo-busca-container {
     display: flex;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -169,6 +171,7 @@ hr.linha {
     display: flex;
     align-items: center;
     gap: 8px;
+    border: none;
 }
 
 .bota-carrinho:hover {
@@ -206,6 +209,7 @@ section p {
 /* BANNER / HERO                              */
 /* ========================================= */
 .hero-section {
+    padding: 60px 20px;
     background-color: #1c1c1c;
     color: #fff;
     width: 100vw;       /* largura total da viewport */
@@ -213,7 +217,7 @@ section p {
 }
 
 .hero-content {
-    max-width: 1000px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -310,7 +314,9 @@ section p {
 
 .hero-image-container img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
     display: block;
     border-radius: 8px;
 }
@@ -331,9 +337,26 @@ section p {
 /* ========================================= */
 /* SEÇÕES: QUEM, HISTÓRIA, DIFERENCIAL        */
 /* ========================================= */
+
+.quem-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quem-conteudo span {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
 .historia-imagem img {
-    max-width: 100%;
-    height: auto;
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -552,10 +575,6 @@ section p {
     }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-}
 
 .titulo {
     text-align: center;
@@ -598,4 +617,13 @@ th[colspan="5"] {
 
 .falta {
     background-color: #d9d9d9; 
+}
+
+ol, ul {
+  padding-left: 1px;
+}
+
+ol {
+  list-style-position: inside; 
+
 }
