@@ -352,13 +352,35 @@ section p {
     font-weight: bold;
 }
 
+.historia-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.historia-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.historia-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.historia-imagem {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
 .historia-imagem img {
-    width: 50%;
-    height: 600px;
+    width: 100%;
+    height: 260px;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 16px;
 }
 
 .btn-historia {
@@ -369,33 +391,84 @@ section p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.btn-historia:hover {
+    background-color: #363636;
+    box-shadow: #4d4d4d 0px 4px 10px;
+    transform: translateY(-1px);
+}
+
+
+.diferencial h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
 }
 
 
 .diferencial-lista {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 0;
 }
+
 
 .diferencial-item {
     background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    width: 260px;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
+
+.diferencial-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--yellow);
+}
+
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.icon-circle i {
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+}
+
 
 .diferencial-item h3 {
-    color: var(--yellow);
-    margin-bottom: 10px;
+    color: var(--dark-gray);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
 }
 
+
+.diferencial-item p {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
 /* ========================================= */
 /* AGENDAMENTO                                 */
 /* ========================================= */
@@ -407,47 +480,38 @@ section p {
     border-radius: 10px;
     margin-top: 50px; 
 }
-.agendamento-texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-}
-
-.agendamento-texto h2{
-    font-size: 2.5rem; 
-    margin-bottom: 20px;
-    color: var(--yellow);
-}
 
 .agendamento-conteudo {
     display: flex;
-    align-items: center;     
+    align-items: center;    
     justify-content: center;
-    gap: 50px;                
+    gap: 50px;               
     max-width: 1100px;
-    margin: 0 auto;           
+    margin: 0 auto;
+    flex-wrap: wrap; 
 }
 
 
 .agendamento-texto {
     flex: 1;
-    text-align: left;         
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+
 .agendamento-texto h2 {
-    font-size: 2.2rem; /* Tamanho do título */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
+    color: var(--yellow);
 }
 
 .agendamento-texto p {
     font-size: 1rem;
-    color: #ccc; /* Cor mais suave para o parágrafo */
+    color: #ccc;
     line-height: 1.6;
 }
 
-/* Botão */
 .btn-agendamento {
     background-color: var(--yellow);
     color: var(--dark-gray);
@@ -457,7 +521,7 @@ section p {
     cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: 30px; /* Adiciona o espaço entre o texto e o botão */
+    margin-top: 30px;
     transition: background-color 0.3s ease;
 }
 
@@ -465,12 +529,11 @@ section p {
     background-color: #c5a030;
 }
 
-/* Bloco da direita (Imagem) */
 .agendamento-imagem img {
-    max-width: 450px; /* Largura máxima da imagem */
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
-    display: block; /* Remove espaços indesejados */
+    display: block;
 }
 
 /* ========================================= */
